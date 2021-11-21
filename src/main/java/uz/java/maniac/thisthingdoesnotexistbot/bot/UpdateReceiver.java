@@ -55,9 +55,9 @@ public class UpdateReceiver {
                                     Objects.equals(message.getText(), "/art")
                     )) {
                         switch (message.getText()) {
-                            case "/person" -> user.setState(State.PERSON);
-                            case "/cat" -> user.setState(State.CAT);
-                            case "/art" -> user.setState(State.ART);
+                            case "/person" : user.setState(State.PERSON); break;
+                            case "/cat" : user.setState(State.CAT); break;
+                            case "/art" : user.setState(State.ART); break;
                         }
                         user.setProgress(true);
                         akkaService.get(telegramUserRepository.save(user), bot);

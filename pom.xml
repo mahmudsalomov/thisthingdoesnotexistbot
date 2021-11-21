@@ -14,7 +14,7 @@
     <name>thisthingdoesnotexistbot</name>
     <description>thisthingdoesnotexistbot</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>11</java.version>
         <scala.binary.version>2.13</scala.binary.version>
         <akka.version>2.6.17</akka.version>
     </properties>

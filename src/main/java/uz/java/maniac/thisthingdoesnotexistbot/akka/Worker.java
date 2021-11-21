@@ -66,9 +66,9 @@ public class Worker extends AbstractBehavior<Command> {
         URL url =new URL("https://thispersondoesnotexist.com/image");
         boolean isPhoto=true;
         switch (user.getState()) {
-            case PERSON -> url = new URL(Urls.PERSON);
-            case ART -> url = new URL(Urls.ART);
-            case CAT -> url = new URL(Urls.CAT);
+            case PERSON : url = new URL(Urls.PERSON); break;
+            case ART : url = new URL(Urls.ART); break;
+            case CAT : url = new URL(Urls.CAT); break;
 
 //            case BUTTERFLY:url=new URL(Urls.BUTTERFLY+(new Random().nextInt(30000)+".jpg")); break;
 //            case HORSE:url=new URL(Urls.HORSE); break;
